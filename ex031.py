@@ -6,6 +6,6 @@ dist = float(input('Qual distância total da viagem: '))
 min_dist = 0.50 * dist
 max_dist = 0.45 * dist
 if dist <= 200:
-    print('O valor da passagem é de {:.2f} reais.'.format(min_dist))
+    print('O valor da passagem é de R${:.2f} reais.'.format(min_dist))
 else:
-    print('O valor da passagem é de {:.2f} reais.'.format(max_dist))
+    print('O valor da passagem é de R${:.2f} reais.'.format(max_dist))
