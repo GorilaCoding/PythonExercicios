@@ -6,8 +6,8 @@ print('SIMULADOR DE EMPRÉSTIMO BANCÁRIO!')
 casa = float(input('Qual o valor da casa a ser adquirida? R$ '))
 salario = float(input('Qual o valor do seu salário bruto? R$ '))
 prazo = int(input('Em quantos anos a casa será parcelada? '))
-prestacao = casa / (prazo * 12)
 prazomes = prazo * 12
+prestacao = casa / prazomes
 print('O valor da casa é de R${:.2f}, o prazo de pagamento é de {} meses e o valor da prestação é de R${:.2f}'.format(casa, prazomes, prestacao))
 if prestacao > salario * 30 / 100:
     print('Empréstimo Negado! Salário incompatível.')
